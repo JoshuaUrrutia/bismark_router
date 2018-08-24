@@ -8,7 +8,7 @@ def submit(r,system,path):
     job_def = copy.copy(r.settings.bismark)
     inputs = job_def["inputs"]
     inputs["fastq1"] = "agave://"+system+"/"+path
-    inputs["genome_folder"] = "agave://data.iplantcollaborative.org/jawon/bismark/Bisulfite_Genome"
+    inputs["genome_folder"] = "agave://data.iplantcollaborative.org/jawon/bismark"
     job_def.inputs = inputs
     job_def.archiveSystem = system
     dir=path.split('/')[:-1]
