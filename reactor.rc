@@ -2,6 +2,6 @@
 REACTOR_NAME=bismark_router
 
 # Docker settings
-DOCKER_HUB_ORG=jawon
+DOCKER_HUB_ORG=jurrutia
 DOCKER_IMAGE_TAG=bismark_router
 DOCKER_IMAGE_VERSION=0.1

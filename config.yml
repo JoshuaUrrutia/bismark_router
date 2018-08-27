@@ -3,14 +3,14 @@ logs:
   level: DEBUG
   token: ~
 bismark:
-  appId: jawon-bismark-s2-0.18.1
+  appId: urrutia-bismark_app-0.1.0
   name: bismark_test
   archive: true
   archivePath: ""
   archiveSystem: ""
   inputs:
     fastq1: ""
-    genome_folder: "agave://data.iplantcollaborative.org/jawon/bismark/"
+    genome_folder: "agave://tacc-globalfs-urrutia/bismark/genome"
   notifications:
     -
       event: FAILED
