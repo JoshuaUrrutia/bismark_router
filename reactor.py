@@ -202,8 +202,6 @@ def bismark(r,ag,m):
             print(json.dumps(job_def, indent=4))
             print("Error submitting job: {}".format(e))
             print e.response.content
-            return
-        return
 
 
 def bme(r,ag,m):
@@ -211,12 +209,6 @@ def bme(r,ag,m):
         manifestURL, genomeReference) = parseCallback(r, ag)
 
     r1 = json.dumps(m["inputs"]["fastq1"]).split('/')[-1].split('.')[0]
-
-
-
-    print("r1:",r1, "genome_folder:",genome_folder)
-
-
 
     job_def = copy.copy(r.settings.bme)
     inputs = job_def["inputs"]
@@ -273,7 +265,7 @@ def bisukit(r,ag,m):
 
     # if all samples have process, submits job:
     if len(queued) == 0:
-        job_def = copy.copy(r.settings.bisulkit)
+        job_def = copy.copy(r.settings.bisukit)
         inputs = job_def["inputs"]
         sample1 = state[doneKey][0]
         sample2 = state[doneKey][1]

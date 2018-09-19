@@ -44,7 +44,7 @@ bme:
       url: jawon@tacc.utexas.edu
 bisukit:
   appId: urrutia-bisukit-0.1.3
-  name: bisulkit_test
+  name: bisukit_test
   archive: true
   archivePath: ""
   archiveSystem: ""
@@ -58,7 +58,7 @@ bisukit:
     context: "CpG"
     cpg: 3
     input1: "sample1"
-    qvalue: "0.01"
+    qvalue: 0.01
     diffmeth: 20
     input2: "sample2"
     dmc: 1
